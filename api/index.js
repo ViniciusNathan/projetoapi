@@ -20,6 +20,14 @@ app.post("/produtos", (req, res) => {
     res.status(201).json(novoItem)
 })
 
+//LER OS PRODUTOS
+
+app.get("/produtos",(req,res) => {
+    res.json(produtos);
+})
+
+
+
 // app.get("/teste", (req, res) => {
 //     res.send("Seja bem-vindo")
 // })
