@@ -5,7 +5,9 @@ const {v4: uuidv4} = require("uuid");
 const app = express(); //mudou o nome de express para app
 const Port = 5001;
 
-app.use(cors());
+app.use(cors({
+    origin: "https://projetoapi-neon.vercel.app/"
+}));
 app.use(express.json());
 let produtos = [];
 
